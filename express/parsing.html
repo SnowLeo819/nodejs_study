@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PARSING TEST</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <h1>127.0.0.1:3000/json</h1>
+    <div class="list"></div>
+    <script>
+      $.ajax({
+        url: "https://d2cc-119-196-108-239.ngrok.io/json",
+        success: function (res) {
+          console.log(res);
+        },
+      });
+    </script>
+  </body>
+</html>
