@@ -1,0 +1,57 @@
+img { vertical-align: top; }
+
+body { background: repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05) 1px, 0, transparent 50px) #333; font-family: "Poppins", "Noto Sans KR"; }
+
+a { text-decoration: none; color: inherit; }
+
+header { height: 50px; display: -webkit-box; display: -ms-flexbox; display: flex; color: #111; overflow: hidden; text-shadow: 1px 1px 0px #e6e6e6,2px 2px 0px #e6e6e6,3px 3px 0px #e6e6e6,4px 4px 0px #e6e6e6,5px 5px 0px #e6e6e6,6px 6px 0px #e6e6e6,7px 7px 0px #e6e6e6,8px 8px 0px #e6e6e6,9px 9px 0px #e6e6e6,10px 10px 0px #e6e6e6,11px 11px 0px #e6e6e6,12px 12px 0px #e6e6e6,13px 13px 0px #e6e6e6,14px 14px 0px #e6e6e6,15px 15px 0px #e6e6e6,16px 16px 0px #e6e6e6,17px 17px 0px #e6e6e6,18px 18px 0px #e6e6e6,19px 19px 0px #e6e6e6,20px 20px 0px #e6e6e6,21px 21px 0px #e6e6e6,22px 22px 0px #e6e6e6,23px 23px 0px #e6e6e6,24px 24px 0px #e6e6e6,25px 25px 0px #e6e6e6,26px 26px 0px #e6e6e6,27px 27px 0px #e6e6e6,28px 28px 0px #e6e6e6,29px 29px 0px #e6e6e6,30px 30px 0px #e6e6e6;; font-size: 18px; font-weight: 500; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; background-color: #fff; -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1); box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1); }
+
+.selectList { padding: 30px 0; width: 100%; height: 40px; }
+
+.selectList select { margin: 0 calc(10%); width: 80%; height: 40px; }
+
+#searchBox { margin-top: 100px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+#searchBox #searchWord { width: 800px; height: 50px; padding: 10px; -webkit-box-sizing: border-box; box-sizing: border-box; background-color: #fff; border-radius: 10px; border: none; outline: none; }
+
+#searchBox button { height: 50px; border: none; background-color: #10f108; color: #fff; padding: 0 40px; font-size: 18px; margin-left: 10px; border-radius: 10px; }
+
+.contents ul { padding: 100px 50px; }
+
+.contents ul.movieList li { padding: 20px; background-color: #fff; border-radius: 10px; margin-bottom: 20px; -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); }
+
+.contents ul.movieList li a { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.contents ul.movieList li a .img { margin-right: 20px; }
+
+.contents ul.movieList li a .img img { width: 110px; height: 150px; -o-object-fit: cover; object-fit: cover; }
+
+.contents ul.movieList li a .info p { margin-bottom: 5px; padding-left: 10px; }
+
+.contents ul.movieList li a .info p:before { content: ""; display: block; width: 3px; height: 3px; background-color: #f00; border-radius: 100%; position: absolute; left: 0; top: 6px; }
+
+.contents ul.movieList li a .info .title { padding-top: 10px; font-size: 20px; font-weight: 700; margin-bottom: 10px; }
+
+.contents ul.newsList li { padding: 20px; background-color: #fff; border-radius: 10px; margin-bottom: 20px; -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); }
+
+.contents ul.newsList li a:hover h2 { text-decoration: underline; }
+
+.contents ul.newsList li .title { font-size: 20px; font-weight: 700; margin-bottom: 10px; }
+
+.contents ul.newsList li .desc { line-height: 1.5; margin-bottom: 10px; }
+
+.contents ul.newsList li .date { font-size: 14px; color: #999; }
+
+.contents ul.imgList { padding: 100px 50px; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+
+.contents ul.imgList li { margin: 0.5%; background-color: #fff; padding: 10px; border-radius: 10px; }
+
+.contents ul.imgList li a .img img { width: 100%; }
+
+.contents ul.imgList li a .info .title { padding-top: 10px; font-size: 16px; font-weight: 600; margin-bottom: 10px; }
+
+.contents ul.imgList li a .info .size { font-size: 14px; color: #999; }
+
+.btns { margin-bottom: 100px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+.btns .more { padding: 20px 40px; background-color: #fff; border-radius: 10px; font-weight: 700; outline: none; }
