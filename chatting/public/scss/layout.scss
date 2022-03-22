@@ -1,0 +1,171 @@
+@import "vars";
+@import "mixins";
+
+img {
+  vertical-align: top;
+}
+body {
+  background: repeating-linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.05),
+      rgba(255, 255, 255, 0.05) 1px,
+      0,
+      transparent 50px
+    )
+    #333;
+  font-family: "Poppins", "Noto Sans KR";
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  height: 50px;
+  display: flex;
+  color: #111;
+  overflow: hidden;
+  @include longShadow(darken(#fff, 10), right, 30);
+  font-size: 18px;
+  font-weight: 500;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body,
+.contents {
+  height: 100%;
+}
+
+.user {
+  background-color: #a9bdce;
+  label {
+    font-size: 14px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    input {
+      width: calc(100% - 80px);
+      height: 40px;
+      padding: 5px;
+      background-color: #fff;
+      outline: none;
+    }
+    .nickname {
+      background-color: #111;
+      color: #fff;
+      outline: none;
+      border: none;
+      height: 42px;
+      border-radius: 5px;
+      width: 70px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+.chattingBox {
+  background-color: #b2c7d9;
+  height: calc(100% - 230px);
+  overflow-y: auto;
+  .list {
+    li {
+      //max-width: calc(100% - 30px);
+      padding-top: 5px;
+      font-size: 14px;
+      display: flex;
+      .profile {
+        position: relative;
+        margin-right: 10px;
+        img {
+          width: 40px;
+          height: 40px;
+          border-radius: 100%;
+          overflow: hidden;
+          object-fit: cover;
+        }
+        .nickName {
+          font-size: 12px;
+          position: absolute;
+          width: 100px;
+          left: 50px;
+        }
+      }
+      .msgBox {
+        display: flex;
+        align-items: flex-end;
+        margin-top: 20px;
+        .time {
+          font-size: 12px;
+        }
+      }
+      .msg {
+        padding: 8px 10px;
+        border-radius: 5px;
+        display: flex;
+      }
+      &.me {
+        flex-direction: row-reverse;
+        .profile {
+          .nickName {
+            text-align: right;
+            left: auto;
+            right: 40px;
+          }
+        }
+        .msgBox {
+          flex-direction: row-reverse;
+        }
+        .msg {
+          background-color: #ffeb33;
+        }
+      }
+      &.other {
+        .msg {
+          background-color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.sendBox {
+  background-color: #fff;
+  height: 150px;
+  position: relative;
+  textarea {
+    padding: 10px;
+    width: calc(100% - 80px);
+    resize: none;
+    height: 100px;
+    border: none;
+    outline: none;
+  }
+  button {
+    background-color: #f0f0f0;
+    color: #999;
+    border: 1px solid #dadada;
+    padding: 10px 20px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 14px;
+    pointer-events: none;
+    &.on {
+      pointer-events: auto;
+      background-color: #ffeb33;
+      color: #111;
+      border: 1px solid transparent;
+    }
+  }
+}
