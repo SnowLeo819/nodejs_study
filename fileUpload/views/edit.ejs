@@ -1,0 +1,26 @@
+<%- include("include/header.ejs") -%>
+  <div class="titleBox">
+    <h2>ToDo Edit!</h2>
+  </div>
+  <div class="insertBox">
+    <form action="/edit?_method=PUT" method="POST">
+      <div class="item">
+        <label>
+          <span>오늘의 할일</span>
+          <input type="text" name="title" placeholder="해야할 일을 입력해 주세요." value="<%= title %>">
+        </label>
+      </div>      
+      <div class="item">
+        <label>
+          <span>날짜</span>
+          <input type="text" name="date" placeholder="date" value="<%= date %>" id="todoDate">
+        </label>
+      </div>
+      <input type="text" name="id" value="<%= id %>">
+    </form>
+  </div>
+  <div class="btns">
+    <a href="/list" class="btn submit" type="submit">LIST</a>
+    <a href="/insert" class="btn reset" type="reset">WRITE</a>
+  </div>
+<%- include("include/footer.ejs") -%>

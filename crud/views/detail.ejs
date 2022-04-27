@@ -1,0 +1,44 @@
+<%- include("include/header.ejs") -%>
+  <div class="titleBox">
+    <h2>ToDo Detail!</h2>
+  </div>
+  <div class="detailBox">
+    <dl>
+      <dt>No.<%= id %></dt>
+      <dd>
+        <p class="todo"><%= title %></p>
+        <span class="date"><%= date %></span>
+        <div class="icons">
+          <a href="/edit/<%= id %>"><span class="edit" data-id="<%= id %>"><span class="material-icons-two-tone">edit</span></span></a>
+          <span class="delete" data-id="<%= id %>"><span class="material-icons-two-tone">delete</span></span>
+        </div>
+      </dd>
+    </dl>
+    <div class="btns">
+      <a href="/list" class="btn submit">LIST</a>
+      <a href="/insert" class="btn reset">WRITE</a>
+    </div>
+  </div>  
+  <script>
+    $(".delete").on("click",()=>{
+      console.log("삭제합니다.")
+      const _id = $(".delete").data("id")
+      const sendData = {
+        id:_id
+      }
+      console.log(sendData);
+      $.ajax({
+        url:"/delete",
+        method:"DELETE",
+        data:sendData,
+        success:(res)=>{
+          console.log(res);
+          if(res.delete==="ok"){
+            alert("삭제되었습니다.");
+            location.href="/list"
+          }
+        }
+      })
+    })
+  </script>
+<%- include("include/footer.ejs") -%>

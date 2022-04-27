@@ -71,7 +71,7 @@ app.get("/gmarket", (req, res) => {
         sale: $(item).find(".link__item .box__information .box__price .text__sale").text(), //가격
         price: $(item).find(".link__item .box__information .box__price .text__price").text(), //가격
         name: $(item).find(".link__item .box__information .text__name").text(), //상품명
-        mall: $(item).find(".link__mall").text().split(">")[1][replaceAll(" ", "")], //회사
+        mall: $(item).find(".link__mall").text().split(">"), //회사
         mallUrl: $(item).find(".link__mall").attr("href"), //회사url
       });
     });

@@ -1,0 +1,59 @@
+<%- include("include/header.ejs") -%>
+  <div class="titleBox">
+    <h2>MOVIE Insert!</h2>
+  </div>
+  <div class="insertBox">
+    <form action="/insert" method="POST" enctype="multipart/form-data">
+      <div class="item">
+        <label>
+          <span>제목</span>
+          <input type="text" name="title" placeholder="제목을 적어주세요" id="title">
+        </label>
+      </div>      
+      <div class="item">
+        <label>
+          <span>개봉일</span>
+          <input type="text" name="date" placeholder="개봉일을 입력하세요" id="todoDate">
+        </label>
+      </div>
+      <div class="item">
+        <label>
+          <span>장르</span>
+          <input type="text" name="genre" placeholder="장르를 적어주세요" id="genre">
+        </label>
+      </div>
+      <div class="item">
+        <label>
+          <span>줄거리</span>
+          <textarea name="desc" id="desc" placeholder="줄거리를 적어주세요"></textarea>
+        </label>
+      </div>
+      <div class="item">
+        <label>
+          <span>평점</span>
+          <input type="text" name="point" placeholder="평점을 적어주세요" id="point">
+        </label>
+      </div>
+      <div class="item">
+        <label>
+          <span>포스터</span>
+          <input type="file" name="poster" placeholder="영화 포스터를 업로드 해주세요" id="poster">
+        </label>
+      </div>
+      <div class="btns">
+        <button class="btn submit" type="submit">확인</button>
+        <button class="btn reset" type="reset">취소</button>
+        <a href="/list" class="btn reset">LIST</a>
+      </div>
+    </form>
+  </div>
+  <script>
+    
+const dataPicker = new Lightpick({
+    // field: document.getElementById('todoDate'),
+    field:document.querySelector("#todoDate"),
+    format:"YYYY-MM-DD"
+    
+});
+  </script>
+<%- include("include/footer.ejs") -%>

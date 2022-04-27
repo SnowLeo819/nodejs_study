@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <script src="../js/gsap/gsap.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="../js/chatting.js" defer></script>
+    <title>News Crawling</title>
+  </head>
+  <body>
+    <header id="header" class="header">
+      <h1 id="logo">CHATTING</h1>
+    </header>
+    <div class="contents">
+      <div class="user">
+        <label>
+          <span class="nickname">대화명</span>
+          <input
+            type="text"
+            placeholder="대화명을 입력해 주세요"
+            id="nickName"
+          />
+        </label>
+      </div>
+      <div class="chattingBox">
+        <ul class="list">
+          <!-- <li class="other">
+            <div class="profile">
+              <img src="../images/profile.png" alt="" />
+              <span class="nickName">OTHER</span>
+            </div>
+            <div class="msgBox">
+              <div class="msg">무너무너어ㅓㅓ</div>
+              <span class="time">오후 6:20</span>
+            </div>
+          </li>
+          <li class="me">
+            <div class="profile">
+              <img src="../images/profile02.png" alt="" />
+              <span class="nickName">ME</span>
+            </div>
+            <div class="msgBox">
+              <div class="msg">ㅋㅋㅋㅋㅋ</div>
+              <span class="time">오후 6:30</span>
+            </div>
+          </li> -->
+        </ul>
+      </div>
+      <div class="sendBox">
+        <label>
+          <textarea id="msg"></textarea>
+          <button class="btnSend">전송</button>
+        </label>
+      </div>
+    </div>
+  </body>
+</html>

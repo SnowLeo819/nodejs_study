@@ -1,0 +1,35 @@
+<%- include("include/header.ejs") -%>
+  <div class="titleBox">
+    <h2>ToDo Insert!</h2>
+  </div>
+  <div class="insertBox">
+    <form action="/insertProcess" method="POST">
+      <div class="item">
+        <label>
+          <span>오늘의 할일</span>
+          <input type="text" name="title" placeholder="해야 할 일을 적어주세요">
+        </label>
+      </div>      
+      <div class="item">
+        <label>
+          <span>날짜</span>
+          <input type="text" name="date" placeholder="date" id="todoDate">
+        </label>
+      </div>
+      <div class="btns">
+        <button class="btn submit" type="submit">확인</button>
+        <button class="btn reset" type="reset">취소</button>
+        <a href="/list" class="btn reset">LIST</a>
+      </div>
+    </form>
+  </div>
+  <script>
+    
+const dataPicker = new Lightpick({
+    // field: document.getElementById('todoDate'),
+    field:document.querySelector("#todoDate"),
+    format:"YYYY-MM-DD"
+    
+});
+  </script>
+<%- include("include/footer.ejs") -%>

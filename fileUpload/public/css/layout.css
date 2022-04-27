@@ -1,0 +1,59 @@
+img { vertical-align: top; }
+
+body { background: repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05) 1px, 0, transparent 50px) #333; font-family: "Poppins", "Noto Sans KR"; }
+
+a { text-decoration: none; color: inherit; }
+
+header { height: 50px; display: -webkit-box; display: -ms-flexbox; display: flex; color: #111; overflow: hidden; text-shadow: 1px 1px 0px #e6e6e6,2px 2px 0px #e6e6e6,3px 3px 0px #e6e6e6,4px 4px 0px #e6e6e6,5px 5px 0px #e6e6e6,6px 6px 0px #e6e6e6,7px 7px 0px #e6e6e6,8px 8px 0px #e6e6e6,9px 9px 0px #e6e6e6,10px 10px 0px #e6e6e6,11px 11px 0px #e6e6e6,12px 12px 0px #e6e6e6,13px 13px 0px #e6e6e6,14px 14px 0px #e6e6e6,15px 15px 0px #e6e6e6,16px 16px 0px #e6e6e6,17px 17px 0px #e6e6e6,18px 18px 0px #e6e6e6,19px 19px 0px #e6e6e6,20px 20px 0px #e6e6e6,21px 21px 0px #e6e6e6,22px 22px 0px #e6e6e6,23px 23px 0px #e6e6e6,24px 24px 0px #e6e6e6,25px 25px 0px #e6e6e6,26px 26px 0px #e6e6e6,27px 27px 0px #e6e6e6,28px 28px 0px #e6e6e6,29px 29px 0px #e6e6e6,30px 30px 0px #e6e6e6;; font-size: 18px; font-weight: 500; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; background-color: #fff; -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1); box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1); }
+
+* { -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.contents .insertBox { padding: 10px; padding-top: 0; }
+
+.contents .insertBox .item { margin-bottom: 20px; }
+
+.contents .insertBox .item label { color: #fff; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+
+.contents .insertBox .item label span { font-size: 20px; }
+
+.contents .insertBox .item label input, .contents .insertBox .item label textarea { width: 100%; height: 50px; padding: 10px 20px; background-color: #fff; border-radius: 10px; border: none; margin-top: 10px; }
+
+.contents .insertBox .item label textarea { resize: none; height: 200px; }
+
+.contents .titleBox { color: #fff; font-size: 24px; padding: 50px 0; text-align: center; font-weight: 500; }
+
+.contents .listBox { padding: 10px; padding-top: 0; }
+
+.contents .listBox li { padding: 20px; background-color: #fff; border-radius: 10px; margin-bottom: 10px; -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2); box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2); font-size: 12px; }
+
+.contents .listBox li .poster { margin: 10px 0; }
+
+.contents .listBox li .poster img { width: 100%; }
+
+.contents .listBox li .todo { font-size: 16px; font-weight: 500; margin: 10px 0; }
+
+.contents .detailBox { padding: 10px; padding-top: 0; }
+
+.contents .detailBox dl { padding: 20px; background-color: #fff; border-radius: 10px; margin-bottom: 10px; -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2); box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2); position: relative; font-size: 12px; }
+
+.contents .detailBox dl .title { font-size: 16px; font-weight: 500; margin: 10px 0; }
+
+.contents .detailBox dl .icons { position: absolute; right: 20px; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+
+.contents .detailBox dl .icons span { cursor: pointer; font-size: 32px; }
+
+.contents .searchBox { padding: 10px; }
+
+.contents .searchBox form { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.contents .searchBox form input[type="text"] { height: 50px; padding: 10px 20px; background-color: #fff; border-radius: 10px; border: none; width: calc(100% - 110px); margin-right: 10px; }
+
+.contents .searchBox form button { width: 100px; height: 50px; padding: 10px 20px; color: #fff; border-radius: 10px; border: none; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; background-color: #111; }
+
+.contents .btns { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+.contents .btns .btn { width: 100px; height: 50px; border-radius: 10px; margin: 0 5px; color: #fff; border: none; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.contents .btns .btn.submit { background-color: #0783a1; }
+
+.contents .btns .btn.reset { background-color: #111; }
